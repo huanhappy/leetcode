@@ -82,6 +82,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="136.singleNUmber.cpp" />
     <ClCompile Include="217.containsDuplicate.cpp" />
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="ListUtil.cpp" />

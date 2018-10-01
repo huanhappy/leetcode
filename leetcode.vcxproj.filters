@@ -47,5 +47,8 @@
     <ClCompile Include="217.containsDuplicate.cpp">
       <Filter>problems</Filter>
     </ClCompile>
+    <ClCompile Include="136.singleNUmber.cpp">
+      <Filter>problems</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
