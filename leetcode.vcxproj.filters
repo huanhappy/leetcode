@@ -44,5 +44,8 @@
     <ClCompile Include="problems\234.PalindromeLinkedList.cpp">
       <Filter>problems</Filter>
     </ClCompile>
+    <ClCompile Include="217.containsDuplicate.cpp">
+      <Filter>problems</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
