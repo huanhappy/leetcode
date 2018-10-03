@@ -20,6 +20,9 @@ struct RandomListNode {
 //  [2018/10/01  created by RockLee]
 class Solution {
 public:
+
+	// first edition: hash_map
+	// time: 40ms
 	RandomListNode *copyRandomList(RandomListNode *head) {
 		if (!head) return nullptr;
 
@@ -49,4 +52,47 @@ public:
 
 		return mapNode[_head];
 	}
+
+
+	// from leetcode [2018/10/03  created by RockLee]
+	// time : 36ms
+	RandomListNode *copyRandomList(RandomListNode *head) {
+		if (!head) return nullptr;
+
+		RandomListNode* p = head;
+		while (p)
+		{
+			RandomListNode* pcpy = new RandomListNode(p->label);
+			pcpy->next = p->next;
+			p->next = pcpy;
+			p = pcpy->next;
+		}
+
+		p = head;
+		while (p)
+		{
+			RandomListNode* cpy = p->next;
+			RandomListNode* tmp = p->next->next;
+			if (nullptr != p->random)
+				cpy->random = p->random->next;
+
+			p = tmp;
+		}
+
+		p = head;
+		RandomListNode* newHead, *p2 = p->next;
+		while (p2)
+		{
+			p->next = p2->next;
+			if (p2->next == nullptr)
+				break;
+
+			p2->next = p2->next->next;
+			p = p->next;
+			p2 = p2->next
+		}
+
+		return newHead;
+	}
+
 };
