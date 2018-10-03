@@ -80,7 +80,7 @@ public:
 		}
 
 		p = head;
-		RandomListNode* newHead, *p2 = p->next;
+		RandomListNode* newHead = p->next, *p2 = p->next;
 		while (p2)
 		{
 			p->next = p2->next;
@@ -93,6 +93,36 @@ public:
 		}
 
 		return newHead;
+	}
+
+	// use hash_map, twice loop [2018/10/03  created by RockLee]
+	RandomListNode *copyRandomList(RandomListNode *head)
+	{
+		if (!head)
+			return NULL;
+		RandomListNode *res = new RandomListNode(head->label);
+		RandomListNode *node = res;
+		RandomListNode *cur = head->next;
+		map<RandomListNode*, RandomListNode*> m;
+		m[head] = res;
+		while (cur)
+		{
+			RandomListNode *tmp = new RandomListNode(cur->label);
+			m[cur] = tmp;
+			node->next = tmp;
+			cur = cur->next;
+			node = node->next;
+		}
+
+		node = res;
+		cur = head;
+		while (cur)
+		{
+			node->random = m[cur->random];
+			cur = cur->next;
+			node = node->next;
+		}
+		return res;
 	}
 
 };
