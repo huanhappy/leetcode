@@ -7,3 +7,4 @@ struct ListNode {
 	ListNode(int x) : val(x), next(NULL) {}
 };
 ListNode* makeList(const std::vector<int>& vec);
+void printList(ListNode* pNode);

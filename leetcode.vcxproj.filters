@@ -56,5 +56,8 @@
     <ClCompile Include="430.flattenMultiLevelLinkedList.cpp">
       <Filter>problems</Filter>
     </ClCompile>
+    <ClCompile Include="61.rotateList.cpp">
+      <Filter>problems</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -91,7 +91,10 @@
     <ClCompile Include="217.containsDuplicate.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="430.flattenMultiLevelLinkedList.cpp" />
+    <ClCompile Include="430.flattenMultiLevelLinkedList.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="61.rotateList.cpp" />
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="ListUtil.cpp" />
     <ClCompile Include="problems\234.PalindromeLinkedList.cpp">

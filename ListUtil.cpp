@@ -17,3 +17,13 @@ ListNode* makeList(const std::vector<int>& vec)
 	return head;
 }
 
+void printList(ListNode* pNode)
+{
+	while (pNode)
+	{
+		cout << pNode->val << "->";
+		pNode = pNode->next;
+	}
+
+	cout << "NULL" << endl;
+}
