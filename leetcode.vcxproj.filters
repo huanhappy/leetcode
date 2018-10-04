@@ -41,22 +41,25 @@
     <ClCompile Include="ListUtil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="problems\36.validSudoku.cpp">
+      <Filter>problems</Filter>
+    </ClCompile>
+    <ClCompile Include="problems\61.rotateList.cpp">
+      <Filter>problems</Filter>
+    </ClCompile>
+    <ClCompile Include="problems\136.singleNUmber.cpp">
+      <Filter>problems</Filter>
+    </ClCompile>
+    <ClCompile Include="problems\138.copy-list-with-random-pointer.cpp">
+      <Filter>problems</Filter>
+    </ClCompile>
+    <ClCompile Include="problems\217.containsDuplicate.cpp">
+      <Filter>problems</Filter>
+    </ClCompile>
     <ClCompile Include="problems\234.PalindromeLinkedList.cpp">
       <Filter>problems</Filter>
     </ClCompile>
-    <ClCompile Include="217.containsDuplicate.cpp">
-      <Filter>problems</Filter>
-    </ClCompile>
-    <ClCompile Include="136.singleNUmber.cpp">
-      <Filter>problems</Filter>
-    </ClCompile>
-    <ClCompile Include="138.copy-list-with-random-pointer.cpp">
-      <Filter>problems</Filter>
-    </ClCompile>
-    <ClCompile Include="430.flattenMultiLevelLinkedList.cpp">
-      <Filter>problems</Filter>
-    </ClCompile>
-    <ClCompile Include="61.rotateList.cpp">
+    <ClCompile Include="problems\430.flattenMultiLevelLinkedList.cpp">
       <Filter>problems</Filter>
     </ClCompile>
   </ItemGroup>
