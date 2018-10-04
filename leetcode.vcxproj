@@ -82,9 +82,16 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="136.singleNUmber.cpp" />
-    <ClCompile Include="138.copy-list-with-random-pointer.cpp" />
-    <ClCompile Include="217.containsDuplicate.cpp" />
+    <ClCompile Include="136.singleNUmber.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="138.copy-list-with-random-pointer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="217.containsDuplicate.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="430.flattenMultiLevelLinkedList.cpp" />
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="ListUtil.cpp" />
     <ClCompile Include="problems\234.PalindromeLinkedList.cpp">
