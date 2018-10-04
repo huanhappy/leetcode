@@ -64,66 +64,21 @@
 
 class Solution {
 public:
-	//  [2018/10/04  created by RockLee]
-	bool isValidSudoku(vector<vector<char>>& board) {
 
-		unordered_map<int, int> mp;
-		//Each row must contain the digits 1 - 9 without repetition.
-		for (int i = 0; i < 9; ++i)
-		{
-			mp.clear();
-			const auto& row = board[i];
-			for (int j = 0; j < 9; ++j)
-			{
-				if (row[j] != '.')
-				{
-					++mp[row[j]];
-					if (mp[row[j]] >1)
+	bool isValidSudoku(vector<vector<char>>& board)
+	{
+		int row[9][9] = { 0 }, col[9][9] = { 0 }, grid[9][9] = { 0 };
+		for (int i = 0; i < 9; i++) {
+			for (int j = 0; j < 9; j++) {
+				if (board[i][j] != '.') {
+					int num = board[i][j] - '1';
+					int k = i / 3 * 3 + j / 3;
+					if (row[i][num] || col[j][num] || grid[k][num]) 
 						return false;
+					row[i][num] = col[j][num] = grid[k][num] = 1;
 				}
 			}
 		}
-
-		//Each column must contain the digits 1 - 9 without repetition.
-		for (int i = 0; i < 9; ++i)
-		{
-			mp.clear();
-			for (int j = 0; j < 9; ++j)
-			{
-				const char& ch = board[j][i];
-				if (ch != '.')
-				{
-					++mp[ch];
-					if (mp[ch] >1)
-						return false;
-				}
-			}
-		}
-
-		//Each of the 9 3x3 sub - boxes of the grid must contain the digits 1 - 9 without repetition.
-		for (int i = 0; i < 9; i+=3)
-		{
-			for (int j = 0; j < 9; j+=3)
-			{
-				mp.clear();
-				// sub
-				for (int ii = 0; ii < 3; ++ii)
-				{
-					for (int jj = 0; jj < 3; ++jj)
-					{
-						const char& ch = board[i+ii][j+jj];
-						if (ch != '.')
-						{
-							++mp[ch];
-							if (mp[ch] > 1)
-								return false;
-						}
-					} // jj
-				} // ii
-			}// j
-		} // i
-
-
 		return true;
 	}
 };
