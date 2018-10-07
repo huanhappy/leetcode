@@ -96,7 +96,10 @@
     <ClCompile Include="problems\234.PalindromeLinkedList.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="problems\36.validSudoku.cpp" />
+    <ClCompile Include="problems\36.validSudoku.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="problems\387.first-unique-character-in-a-string.cpp" />
     <ClCompile Include="problems\430.flattenMultiLevelLinkedList.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>

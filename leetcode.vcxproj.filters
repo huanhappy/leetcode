@@ -62,5 +62,8 @@
     <ClCompile Include="problems\430.flattenMultiLevelLinkedList.cpp">
       <Filter>problems</Filter>
     </ClCompile>
+    <ClCompile Include="problems\387.first-unique-character-in-a-string.cpp">
+      <Filter>problems</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
