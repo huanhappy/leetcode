@@ -11,13 +11,29 @@
 class Solution {
 public:
 	int firstUniqChar(string s) {
-		unordered_map<char, int> mp;
-		for (const auto& v : s)
-			++mp[v];
+		if (s.empty())
+			return -1;
+
+		int mp[26];
+		memset(mp, -1, sizeof(mp));
 		for (size_t i = 0; i < s.size(); ++i)
-			if (mp[s[i]] < 2)
-				return i;
-		return -1;
+		{
+			int c = s[i] - 'a';
+			if (mp[c] > -1)
+				mp[c] = -2;
+			if (mp[c] == -1)
+				mp[c] = i;
+		}
+		int res = -1;
+		for (int i = 0; i < 26; ++i)
+		{
+			if (mp[i]>-1)
+			{
+				if (res < 0 || res > mp[i])
+					res = mp[i];
+			}
+		}
+		return res;
 	}
 };
 
