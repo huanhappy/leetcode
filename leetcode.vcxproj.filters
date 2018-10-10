@@ -68,5 +68,8 @@
     <ClCompile Include="problems\622.Design-circlue-queue.cpp">
       <Filter>problems</Filter>
     </ClCompile>
+    <ClCompile Include="problems\35.search-insert-position.cpp">
+      <Filter>problems</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
