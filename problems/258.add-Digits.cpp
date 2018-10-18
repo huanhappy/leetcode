@@ -14,16 +14,8 @@
 class Solution {
 public:
 	int addDigits(int num) {
-		if (num < 10)
-			return num;
-
-		int a = num % 10;
-		while (num / 10)
-		{
-			num /= 10;
-			a += num % 10;
-		}
-
-		return addDigits(a);
+		// Êý¸ù 
+		// https://en.wikipedia.org/wiki/Digital_root
+		return 1 + (num - 1) % 9;
 	}
 };
