@@ -71,5 +71,11 @@
     <ClCompile Include="problems\35.search-insert-position.cpp">
       <Filter>problems</Filter>
     </ClCompile>
+    <ClCompile Include="problems\258.add-Digits.cpp">
+      <Filter>problems</Filter>
+    </ClCompile>
+    <ClCompile Include="problems\38.count-and-say.cpp">
+      <Filter>problems</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
