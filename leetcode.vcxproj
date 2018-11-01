@@ -84,12 +84,15 @@
   <ItemGroup>
     <ClCompile Include="leetcode.cpp" />
     <ClCompile Include="ListUtil.cpp" />
+    <ClCompile Include="problems\102.binary-tree-level-order-traversal.cpp" />
+    <ClCompile Include="problems\11.container-with-most-water.cpp" />
     <ClCompile Include="problems\136.singleNUmber.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="problems\138.copy-list-with-random-pointer.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="problems\200.number-of-island.cpp" />
     <ClCompile Include="problems\217.containsDuplicate.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -120,6 +123,7 @@
     <ClCompile Include="problems\622.Design-circlue-queue.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="problems\909.snakes-and-ladders.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
